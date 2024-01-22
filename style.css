@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(33,37,41);
+}
+
+.custom-width {
+    width: 200px;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 2.5em;
+}
+
+.carousel-inner:hover {
+  overflow: visible;
+  }
+  
+  /*CAROUSEL*/
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+      display: flex;
+  }
+
+div.card:hover {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoom-in {
+transform: scale(1.2);
+z-index: 1;
+}
